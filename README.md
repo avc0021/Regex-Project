@@ -3,9 +3,9 @@
 As a web development student I want a tutorial explaining a specific regex so that I can understand the search pattern the regex defines.
 
 ## Summary
-(Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.) `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$`
+(Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.) `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-Using the above expression will allow a user to seardh for a match URL. During this gist we will break this down.
+Using the above expression will allow a user to seardh for a match email. During this gist we will break this down.
 
 ## Table of Contents
 
@@ -25,6 +25,7 @@ Using the above expression will allow a user to seardh for a match URL. During t
 
 ### Anchors
 
+`^` is start of string
 ### Quantifiers
 
 ### OR Operator
@@ -34,13 +35,15 @@ Using the above expression will allow a user to seardh for a match URL. During t
 ### Flags
 
 ### Grouping and Capturing
+Grouping allows you to treat another expression as a single unit ie `()` Expression will match as group.
 
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
 
 ### Boundaries
-
+  At the start and end of the this expression you can the boundry points `/.../`
+  
 ### Back-references
 
 ### Look-ahead and Look-behind
@@ -49,5 +52,7 @@ Using the above expression will allow a user to seardh for a match URL. During t
 
 Github: https://github.com/avc0021</br>
 Email: avc0021@gmail.com
+
+ 
 
  
