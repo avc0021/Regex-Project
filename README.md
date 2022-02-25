@@ -25,34 +25,38 @@ Using the above expression will allow a user to seardh for a match email. During
 
 ### Anchors
 
-`^` is start of string
+`^` is start of string and the `$` determines the end of the string. 
 ### Quantifiers
+`+` matches one or more of preceeding token.
 
 ### OR Operator
+na
 
 ### Character Classes
+`a-z` and `0-9`
 
 ### Flags
+na?
 
 ### Grouping and Capturing
-Grouping allows you to treat another expression as a single unit ie `()` Expression will match as group.
+Grouping allows you to treat another expression as a single unit. Using `(....)` will allow the first grouping.
 
 ### Bracket Expressions
-
+`[...]` is a character class allows a specific set of characters.
 ### Greedy and Lazy Match
-
+na
 ### Boundaries
   At the start and end of the this expression you can the boundry points `/.../`
   
 ### Back-references
+na
 
 ### Look-ahead and Look-behind
+na
 
 ## Author
 
 Github: https://github.com/avc0021</br>
 Email: avc0021@gmail.com
-
- 
 
  
