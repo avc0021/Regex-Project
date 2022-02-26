@@ -32,13 +32,13 @@ Character classes are recognized by the usage of the square brackets `[..]`. The
 Parenthesis used within this expression capture a grouping of a string `(....)`. In this expression three groupings can be found. Later this can be used for extracting a subtring or using a back reference if needed. 
 
 ### Bracket Expressions
-`[...]` is a character class allows a specific set of characters.
+Three bracket expressions can be found within this string. Within each set of brackets various character classes can be found. 
 
 ### Greedy Match
-By default, the quantifer that allows the greedy match is `+`. This match will seek preceding characters or subexpressions 1 or more times as many times as possible.
+By default, the quantifer that allows the greedy match is `+`. This match will reference preceding characters/ subexpressions 1 or more times as many times as possible.
 
 ## Author
 
-Adam Castro
+Adam Castro</br>
 Github: https://github.com/avc0021</br>
 Email: avc0021@gmail.com
