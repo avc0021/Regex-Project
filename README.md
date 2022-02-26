@@ -21,10 +21,10 @@ During this gist we will explain and break down each part of the expression desc
 ## Regex Components
 
 ### Anchors
-`^` is start of string and the `$` determines the end of the string. 
+The `^` anchor is the beginning of a string, while `$` determines the end of the string. Both are not effected by the multiline flag since it is not enabled.
 
 ### Quantifiers
-`+` matches one or more of preceeding token.
+Using `+` as a quantifier matches one or more of preceeding sets of characters. In the first set `[a-z0-9_\.-]` this would include characters a-z (case sensitive), numbers 0-9, underscore, period or hyphen. In the second character set `[\da-z\.-]`uses the quantifer to match any digit 0-9, a-z (case sensitive), period, or hyphen. The last quantifer is used in the last grouping where `{2,6}` matches a specified quantity between 2 to 6.
 
 ### Character Classes
 `a-z` and `0-9`
