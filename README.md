@@ -12,11 +12,10 @@ During this gist we will explain and break down each part of the expression desc
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Character Class/Set](#character-class/set)
+- [Character Classes](#character-classes)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy Match](#greedy-match)
-- [Boundaries](#boundaries)
 
 ## Regex Components
 
@@ -26,8 +25,8 @@ The `^` anchor is the beginning of a string, while `$` determines the end of the
 ### Quantifiers
 By using the `+` as a quantifier matches one or more of preceeding sets of characters. In the first set `[a-z0-9_\.-]` this would include characters a-z (case sensitive), numbers 0-9, underscore, period or hyphen. In the second character set `[\da-z\.-]`uses the quantifer to match any digit 0-9, a-z (case sensitive), period, or hyphen. The last quantifer is used in the last grouping where `{2,6}` matches a specified quantity between 2 to 6.
 
-### Character Class/Set
-Character classes, also known as sets, are recognized by the usage of the square brackets or `[..]`. By identifying this character set it allows quantifier to look for one or more within this character set. 
+### Character Classes
+Character classes are recognized by the usage of the square brackets `[..]`. The classes that are used in the expression are a character set with a range for number digit or letter from a-z. There is an escape character class incorporated searching for a dot notation. lastly the `\d` character class can found with seond grouping. This matches any digit character. 
 
 ### Grouping and Capturing
 Parenthesis used within this expression capture a grouping of a string `(....)`. In this expression three groupings can be found. Later this can be used for extracting a subtring or using a back reference if needed. 
@@ -37,9 +36,6 @@ Parenthesis used within this expression capture a grouping of a string `(....)`.
 
 ### Greedy Match
 `+`	Match the preceding character or subexpression 1 or more times (as many as possible).
-
-### Boundaries
-At the start and end of the this expression you can the boundry points `/.../`
 
 
 ## Author
