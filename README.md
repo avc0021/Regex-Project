@@ -35,12 +35,10 @@ Parenthesis used within this expression capture a grouping of a string `(....)`.
 `[...]` is a character class allows a specific set of characters.
 
 ### Greedy Match
-`+`	Match the preceding character or subexpression 1 or more times (as many as possible).
-
+By default, the quantifer that allows the greedy match is `+`. This match will seek preceding characters or subexpressions 1 or more times as many times as possible.
 
 ## Author
 
+Adam Castro
 Github: https://github.com/avc0021</br>
 Email: avc0021@gmail.com
-
- 
