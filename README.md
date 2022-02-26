@@ -12,7 +12,7 @@ During this gist we will explain and break down each part of the expression desc
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Character Classes](#character-classes)
+- [Character Class/Set](#character-class/set)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy Match](#greedy-match)
@@ -24,16 +24,17 @@ During this gist we will explain and break down each part of the expression desc
 The `^` anchor is the beginning of a string, while `$` determines the end of the string. Both are not effected by the multiline flag since it is not enabled.
 
 ### Quantifiers
-Using `+` as a quantifier matches one or more of preceeding sets of characters. In the first set `[a-z0-9_\.-]` this would include characters a-z (case sensitive), numbers 0-9, underscore, period or hyphen. In the second character set `[\da-z\.-]`uses the quantifer to match any digit 0-9, a-z (case sensitive), period, or hyphen. The last quantifer is used in the last grouping where `{2,6}` matches a specified quantity between 2 to 6.
+By using the `+` as a quantifier matches one or more of preceeding sets of characters. In the first set `[a-z0-9_\.-]` this would include characters a-z (case sensitive), numbers 0-9, underscore, period or hyphen. In the second character set `[\da-z\.-]`uses the quantifer to match any digit 0-9, a-z (case sensitive), period, or hyphen. The last quantifer is used in the last grouping where `{2,6}` matches a specified quantity between 2 to 6.
 
-### Character Classes
-`a-z` and `0-9`
+### Character Class/Set
+Character classes, also known as sets, are recognized by the usage of the square brackets or `[..]`. By identifying this character set it allows quantifier to look for one or more within this character set. 
 
 ### Grouping and Capturing
-Grouping allows you to treat another expression as a single unit. Using `(....)` will allow the first grouping.
+Parenthesis used within this expression capture a grouping of a string `(....)`. In this expression three groupings can be found. Later this can be used for extracting a subtring or using a back reference if needed. 
 
 ### Bracket Expressions
 `[...]` is a character class allows a specific set of characters.
+
 ### Greedy Match
 `+`	Match the preceding character or subexpression 1 or more times (as many as possible).
 
