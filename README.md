@@ -20,22 +20,23 @@ During this gist we will explain and break down each part of the expression desc
 ## Regex Components
 
 ### Anchors
-The `^` anchor is the beginning of a string, while `$` determines the end of the string. Both are not effected by the multiline flag since it is not enabled.
+At the start of the expression you can find the `^` anchor. This is the beginning of a string. At the end of the string you find `$` determines the end of the string. Both are not effected by the multiline flags since it is not enabled.
 
 ### Quantifiers
-By using the `+` as a quantifier matches one or more of preceeding sets of characters. In the first set `[a-z0-9_\.-]` this would include characters a-z (case sensitive), numbers 0-9, underscore, period or hyphen. In the second character set `[\da-z\.-]`uses the quantifer to match any digit 0-9, a-z (case sensitive), period, or hyphen. The last quantifer is used in the last grouping where `{2,6}` matches a specified quantity between 2 to 6.
+By using the `+` as a quantifier, this matches one or more of preceeding sets of characters. In the firs bracket expression `[a-z0-9_\.-]` this would include characters a-z (case sensitive), numbers 0-9, underscore, period or hyphen. In the second bracket set `[\da-z\.-]`uses the quantifer to match any digit 0-9, a-z (case sensitive), period, or hyphen. The last quantifer is used in the last grouping where `{2,6}` matches a specified of atleast 2 but no more than 6 characters from the preceeding bracket expression `[a-z\.]`.
 
 ### Character Classes
-Character classes are recognized by the usage of the square brackets `[..]`. The classes that are used in the expression are a character set with a range for number digit or letter from a-z. There is an escape character class incorporated searching for a dot notation. lastly the `\d` character class can found with seond grouping. This matches any digit character. 
+The classes that are used in the expression are a character set with a range for number digit or letter from a-z. There is an escape character class incorporated searching for a dot notation. lastly the `\d` character class can found with seond grouping. This matches any digit character. 
 
 ### Grouping and Capturing
 Parenthesis used within this expression capture a grouping of a string `(....)`. In this expression three groupings can be found. Later this can be used for extracting a subtring or using a back reference if needed. 
 
 ### Bracket Expressions
-Three bracket expressions can be found within this string. Within each set of brackets various character classes can be found. 
+Three bracket expressions `[...]` can be found within this within each grouping. Within each set of brackets various character classes can be found. 
 
 ### Greedy Match
-By default, the quantifer that allows the greedy match is `+`. This match will reference preceding characters/ subexpressions 1 or more times as many times as possible.
+By default, the quantifer that allows the greedy match is `+`. This match will reference preceding characters as many times as possible. Towards the end of the expression `{2,6}` also tries to use its default greedy match by trying to match a minimum of two of the characters, but no more than six.
+
 
 ## Author
 
