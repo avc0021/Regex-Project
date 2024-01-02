@@ -35,7 +35,7 @@ Parenthesis used within this expression capture a grouping of a string and can b
 Three bracket expressions `[...]` can be found within this within each grouping. Within each set of brackets various character classes can be found. 
 
 ### Greedy Match
-By default, the quantifer that allows the greedy match The quantifer that triggers the greedy match is `+`. This match will reference preceding characters as many times as possible. Towards the end of the expression `{2,6}` also tries to use its default greedy match by trying to match a minimum of two of the characters, but no more than six.
+By default, the quantifer that allows the greedy match. The quantifer that triggers the greedy match is `+`. This match will reference preceding characters as many times as possible. Towards the end of the expression `{2,6}` also tries to use its default greedy match by trying to match a minimum of two of the characters, but no more than six.
 
 
 ## Author
